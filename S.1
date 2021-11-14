@@ -253,10 +253,10 @@ for (j in 1:length(simulations)){
     }
     ST_TD <- St_TD + sigma * sqrt(dt)*Z[52]
     VT_TD = at_TD * ST_TD + bt_TD
-    PnL_TD[q] <- VT_TD - max(ST_TD - K,0)
+    PnL_true[q] <- VT_TD - max(ST_TD - K,0)
   }
   
-  SdErrorTD[j] <- sd(PnL_TD)/F(1,0)
+  HedgeError_true[j] <- sd(PnL_true)/F(1,0)
 }
 
 # Plot
