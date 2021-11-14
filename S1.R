@@ -31,7 +31,7 @@ for (j in 1:n) {
   for (i in 0:p) {
     Y[j,i+1] = i*(df$S0[j])^(i-1)
   }
-}
+} 
 YY = matrix(NA, nrow = n, ncol = p) # to be used in delta only regression
 for (j in 1:n) {
   for (i in 1:p) {
