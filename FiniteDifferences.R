@@ -1,4 +1,4 @@
-
+ 
 
 ### Values from article
 # Parameters used in Longstaff & Schwartz article 
