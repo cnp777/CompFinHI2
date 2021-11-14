@@ -263,11 +263,11 @@ for (j in 1:length(simulations)){
 library(ggplot2)
 library(reshape2)
 
-df_half = data.frame(SdError, row.names = simulations)
+df_half = data.frame(HedgeError_half, row.names = simulations)
 colnames(df_half) <- polydeg
 df_half$sim <- simulations
 
-df_price = data.frame(SdErrorPO, row.names = simulations)
+df_price = data.frame(HedgeError_price, row.names = simulations)
 colnames(df_price) <- polydeg
 df_price$sim <- simulations
 
